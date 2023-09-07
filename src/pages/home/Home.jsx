@@ -10,7 +10,7 @@ const Home = () => {
   return <div>
     <HeroSection name={name} aboutme={aboutme} />
     <PortfolioCard />
-      <ListItems title="Technologies" technologies={technologies}/>
+      <ListItems title="Technologies" items={technologies}/>
     <PortfolioCard name={name} aboutme={aboutme} />
   </div>
 };

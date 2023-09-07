@@ -4,7 +4,7 @@ ul {
     padding: 0;
   }
   
-  .tech-item {
+  .list-item {
     font-size: 16px;
     margin: 5px;
     background-color: #060606;
@@ -15,7 +15,7 @@ ul {
     cursor: pointer;
   }
   
-  .tech-item:hover {
+  .list-item:hover {
     background-color: #ffffff;
     border: 1px solid black;
     color: black;

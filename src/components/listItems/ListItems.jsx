@@ -1,12 +1,12 @@
 import "./ListItems.css";
 
-const ListItems = ({ title, technologies }) => {
+const ListItems = ({ title, items }) => {
   return (
     <div>
       <h1>{title}</h1>
       <ul>
-        {technologies.map((item) => (
-          <li className="tech-item" key={item}>{item}</li>
+        {items.map((item) => (
+          <li className="list-item" key={item}>{item}</li>
         ))}
       </ul>
     </div>
