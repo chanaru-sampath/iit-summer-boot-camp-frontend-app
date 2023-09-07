@@ -11,6 +11,7 @@ const projects = ["NextJS", "React", "Express"];
 
 const Home = () => {
   const [portfolioData, setPortfolioData] = useState([]);
+  const [selectedProject, setSelectedProject] = useState(null);
   const [apiLoading, setApiLoading] = useState(false);
 
   useEffect(() => {
