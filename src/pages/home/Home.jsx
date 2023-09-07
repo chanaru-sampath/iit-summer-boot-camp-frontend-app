@@ -6,7 +6,7 @@ const aboutme = "Experienced web developer creating engaging websites. Let's bri
 const Home = () => {
   return <div>
     <PortfolioCard name={name} aboutme={aboutme} />
-  </div>;
+  </div>
 };
 
 export default Home;
