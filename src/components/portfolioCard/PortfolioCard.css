@@ -1,0 +1,12 @@
+.aboutme {
+   display: flex; 
+}
+
+.title {
+    flex: 3
+}
+
+.prof-image {
+    flex: 1;
+    height: 257px;
+}
