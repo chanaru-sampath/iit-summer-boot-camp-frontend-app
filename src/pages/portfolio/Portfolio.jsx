@@ -1,3 +1,5 @@
-export const Portfolio = () => {
+const Portfolio = () => {
   return <div>Portfolio</div>;
 };
+
+export default Portfolio;
