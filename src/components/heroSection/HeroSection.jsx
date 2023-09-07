@@ -18,10 +18,10 @@ function HeroSection(props) {
           <h1>{name}</h1>
           <p>{aboutme}</p>
           <section className="social-icon-list">
-            <img src={github} style={{height: "48px", padding: "6px", alt: "github logo"}} />
-            <img src={instagram} style={{height: "48px", padding: "6px", alt: "instagram logo"}} />
-            <img src={linkedin} style={{height: "48px", padding: "6px", alt: "linkedin logo"}} />
-            <img src={twitter} style={{height: "48px", padding: "6px", alt: "twitter logo"}} />
+            <img src={github} style={{height: "48px", }} alt="github logo" />
+            <img src={instagram} style={{height: "48px", }} alt="instagram logo" />
+            <img src={linkedin} style={{height: "48px", }} alt="linkedin logo" />
+            <img src={twitter} style={{height: "48px", }} alt="twitter logo"/>
           </section>
         </div>
       <div>

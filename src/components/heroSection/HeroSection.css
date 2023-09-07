@@ -17,4 +17,9 @@
 
 .social-icon-list {
     margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
 }
