@@ -9,8 +9,7 @@ const technologies = ["NextJS", "React", "Tailwind CSS", "Figma", "Express"];
 const Home = () => {
   return <div>
     <HeroSection name={name} aboutme={aboutme} />
-    <PortfolioCard />
-      <ListItems title="Technologies" items={technologies}/>
+    <ListItems title="Technologies" items={technologies}/>
     <PortfolioCard name={name} aboutme={aboutme} />
   </div>
 };
