@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import HeroSection from "../../components/heroSection/HeroSection";
 import ListItems from "../../components/listItems/ListItems";
 import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
-import { useState } from "react";
 
 const name = "John Doe";
 const aboutme =
