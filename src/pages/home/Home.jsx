@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import HeroSection from "../../components/heroSection/HeroSection";
 import ListItems from "../../components/listItems/ListItems";
-import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
+import PortfolioList from "../../components/PortfolioList/Portfolio";
 
 const name = "John Doe";
 const aboutme =
@@ -31,7 +31,7 @@ const Home = () => {
       <HeroSection name={name} aboutme={aboutme} />
       <ListItems title="Technologies" items={technologies} onSelect={() => console.log("selected")} selectedItem={technologies[1]} />
       <ListItems title="Portfolio" items={projects} onSelect={() => console.log("selected")} />
-      <PortfolioCard name={name} aboutme={aboutme} />
+      <PortfolioList/>
     </div>
   );
 };
