@@ -3,7 +3,6 @@ import PortfolioCard from "../portfolioCard/PortfolioCard";
 import "./Portfolio.css";
 
 const PortfolioList = (props) => {
-
   const {
     itemsList = [],
     selectedItem
@@ -31,9 +30,8 @@ const PortfolioList = (props) => {
           />
         )})
       }
-      
-    </div>
-  );
+      </div>
+    )
 };
 
 export default PortfolioList
