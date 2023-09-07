@@ -14,7 +14,18 @@ ul {
     padding: 10px 20px;
     cursor: pointer;
   }
-  
+
+  .list-item-selected {
+    font-size: 16px;
+    margin: 5px;
+    background-color: #060606;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
   .list-item:hover {
     background-color: #060606;
     color: white;

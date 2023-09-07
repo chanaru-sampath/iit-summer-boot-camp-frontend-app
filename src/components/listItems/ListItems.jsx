@@ -1,13 +1,22 @@
 import "./ListItems.css";
 
-const ListItems = ({ title, items }) => {
+const ListItems = (props) => {
+  const {
+    title, 
+    items,
+    selectedItem = null,
+    onSelect
+  } = props;
+
   return (
     <div>
       <h2>{title}</h2>
       <ul>
-        {items.map((item) => (
-          <li className="list-item" key={item}>{item}</li>
-        ))}
+        {items.map((item, index) => {
+          const isSelected = selectedItem === item;
+          return (
+          <li className={isSelected ? "list-item-selected" : "list-item"} key={item} onClick={() => onSelect(item, index)}>{item}</li>
+        )})}
       </ul>
     </div>
   );
