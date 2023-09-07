@@ -3,35 +3,25 @@ import PortfolioCard from "../portfolioCard/PortfolioCard";
 import "./Portfolio.css";
 
 const PortfolioList = (props) => {
-  const {
-    itemsList = [],
-    selectedItem
-  } = props;
+  const { itemsList = [], selectedItem } = props;
 
   return (
     <div className="portfolio-container">
-      {
-        itemsList.map(item => {
-          const {
-            title,
-            category,
-            image,
-            likes,
-            description,
-          } = item;
+      {itemsList.map((item) => {
+        const { title, category, image, likes, description } = item;
 
-          return (
+        return (
           <PortfolioCard
             cardImage={image}
             title={title}
             description={description}
             likes={likes}
-            selected={selectedItem === category}
+            selected={selectedItem.toLowerCase() === category.toLowerCase()}
           />
-        )})
-      }
-      </div>
-    )
+        );
+      })}
+    </div>
+  );
 };
 
-export default PortfolioList
+export default PortfolioList;
