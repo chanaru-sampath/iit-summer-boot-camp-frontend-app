@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tech-item {
+    font-size: 16px;
+    margin: 5px;
+    background-color: #060606;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tech-item:hover {
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+  }
+  

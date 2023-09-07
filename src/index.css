@@ -40,3 +40,12 @@ button:hover {
   border: 1px solid black;
   color: black;
 }
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  text-align: justify;
+  line-height: 26px;
+}
