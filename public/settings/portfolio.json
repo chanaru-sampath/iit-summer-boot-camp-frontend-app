@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Portfolio Website",
+    "category": "nextjs",
+    "image": "/assets/portfolioweb.png",
+    "likes": 34,
+    "description": "A dynamic showcase of my web development skills and projects, highlighting seamless user experiences and captivating designs."
+  },
+  {
+    "title": "E-Commerce Website",
+    "category": "reactjs",
+    "image": "/assets/ecomweb.png",
+    "likes": 25,
+    "description": "An immersive and user-friendly e-commerce platform designed to streamline the online shopping experience and drive sales."
+  },
+  {
+    "title": "Image API",
+    "category": "express",
+    "image": "/assets/imageapiweb.png",
+    "likes": 25,
+    "description": "A  Image API that empowers developers to effortlessly integrate image processing, and storage functionalities into their applications.       "
+  }
+]
