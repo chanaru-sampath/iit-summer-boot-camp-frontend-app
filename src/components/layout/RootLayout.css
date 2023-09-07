@@ -4,13 +4,18 @@
   height: 100vh;
 }
 
-.navbar {
-  display: flex;
+.header {
   background-color: #181818;
   padding: 20px 50px;
   color: #fff;
+}
+
+.navbar {
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 900px;
+  margin: auto;
 }
 
 .logo {
@@ -38,4 +43,6 @@
 
 .main {
   flex: 1 1 0%;
+  max-width: 900px;
+  margin: auto;
 }
