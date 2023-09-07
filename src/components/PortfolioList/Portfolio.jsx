@@ -1,16 +1,37 @@
 import React from "react";
 import PortfolioCard from "../portfolioCard/PortfolioCard";
-import portfolioweb from "/assets/portfolioweb.png";
+import "./Portfolio.css";
 
-const PortfolioList = () => {
+const PortfolioList = (props) => {
+
+  const {
+    itemsList = [],
+    selectedItem
+  } = props;
+
   return (
-    <div>
-      <PortfolioCard
-        cardImage={portfolioweb}
-        title="Portfolio website"
-        description="A dynamic showcase of my b development ills and projects, highlighting seamless........ "
-        likes="4"
-      />
+    <div className="portfolio-container">
+      {
+        itemsList.map(item => {
+          const {
+            title,
+            category,
+            image,
+            likes,
+            description,
+          } = item;
+
+          return (
+          <PortfolioCard
+            cardImage={image}
+            title={title}
+            description={description}
+            likes={likes}
+            selected={selectedItem === category}
+          />
+        )})
+      }
+      
     </div>
   );
 };

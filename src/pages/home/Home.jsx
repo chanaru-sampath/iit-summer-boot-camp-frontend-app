@@ -31,7 +31,7 @@ const Home = () => {
       <HeroSection name={name} aboutme={aboutme} />
       <ListItems title="Technologies" items={technologies} onSelect={() => console.log("selected")} selectedItem={technologies[1]} />
       <ListItems title="Portfolio" items={projects} onSelect={() => console.log("selected")} />
-      <PortfolioList/>
+      <PortfolioList itemsList={portfolioData} />
     </div>
   );
 };
