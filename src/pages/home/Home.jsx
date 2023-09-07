@@ -1,3 +1,4 @@
+import HeroSection from "../../components/heroSection/HeroSection";
 import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
 
 const name = "John Doe";
@@ -5,7 +6,8 @@ const aboutme = "Experienced web developer creating engaging websites. Let's bri
 
 const Home = () => {
   return <div>
-    <PortfolioCard name={name} aboutme={aboutme} />
+    <HeroSection name={name} aboutme={aboutme} />
+    <PortfolioCard />
   </div>
 };
 
