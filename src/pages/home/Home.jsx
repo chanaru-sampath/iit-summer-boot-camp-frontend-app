@@ -1,5 +1,9 @@
+import PortfolioCard from "../../components/portfolioCard/PortfolioCard";
+
 const Home = () => {
-  return <div>Home</div>;
+  return <div>
+    <PortfolioCard />
+  </div>;
 };
 
 export default Home;
