@@ -1,4 +1,4 @@
-.hero-container {
+.heroContainer {
     margin-top: 4rem;
 }
 .aboutme {
@@ -9,7 +9,7 @@
     flex: 3
 }
 
-.prof-image {
+.profImage {
     flex: 1;
     height: 257px;
     margin-left: 2rem;
