@@ -7,12 +7,12 @@ const PortfolioList = (props) => {
 
   return (
     <div className="portfolio-container">
-      {itemsList.map((item, i) => {
-        const { title, category, image, likes, description } = item;
+      {itemsList.map((item) => {
+        const { title, category, image, likes, description, id } = item;
 
         return (
           <PortfolioCard
-            key={i}
+            key={id}
             cardImage={image}
             title={title}
             description={description}

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import HeroSection from "../../components/heroSection/HeroSection";
 import ListItems from "../../components/listItems/ListItems";
 import PortfolioList from "../../components/PortfolioList/Portfolio";
+import Loader from "../../components/loader/Loader";
+import { sleep } from "../../helpers/utils";
 
 const name = "John Doe";
 const aboutme =
@@ -18,6 +20,7 @@ const Home = () => {
     const fetchPortfolioData = async () => {
       setApiLoading(true);
       const resp = await fetch("/settings/portfolio.json");
+      await sleep(2000);
       const data = await resp.json();
       setPortfolioData(data);
       setApiLoading(false);
@@ -47,7 +50,14 @@ const Home = () => {
         }}
         selectedItem={selectedProject}
       />
-      <PortfolioList itemsList={portfolioData} selectedItem={selectedProject} />
+      {!apiLoading ? (
+        <PortfolioList
+          itemsList={portfolioData}
+          selectedItem={selectedProject}
+        />
+      ) : (
+        <Loader />
+      )}
     </div>
   );
 };
